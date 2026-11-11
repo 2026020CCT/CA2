@@ -1,0 +1,116 @@
+.item-form-page {
+    width: min(100% - 2rem, 42rem);
+    margin: 0 auto;
+    padding: clamp(2rem, 8vh, 5rem) 0;
+}
+
+#item-form {
+    display: grid;
+    gap: 0.65rem;
+    padding: clamp(1.5rem, 5vw, 3rem);
+    border: 1px solid var(--color-border);
+    border-radius: 1.15rem;
+    background: var(--color-surface);
+    box-shadow: var(--shadow-card);
+}
+
+#item-form h1 {
+    margin: 0 0 0.3rem;
+    color: #182743;
+    font-size: clamp(1.75rem, 5vw, 2.25rem);
+    letter-spacing: -0.04em;
+}
+
+#item-form h1::after {
+    display: block;
+    width: 3rem;
+    height: 0.25rem;
+    margin-top: 0.8rem;
+    border-radius: 1rem;
+    background: var(--color-primary);
+    content: "";
+}
+
+#item-form label {
+    margin-top: 0.65rem;
+    color: #34415b;
+    font-size: 0.92rem;
+    font-weight: 650;
+}
+
+#item-form input,
+#item-form textarea,
+#item-form button {
+    width: 100%;
+    padding: 0.85rem 0.95rem;
+    border: 1px solid #d5dce8;
+    border-radius: 0.6rem;
+    background: var(--color-surface);
+    color: var(--color-text);
+    font: inherit;
+}
+
+#item-form input::placeholder {
+    color: #98a2b3;
+}
+
+#item-form input:focus,
+#item-form textarea:focus {
+    border-color: var(--color-primary);
+    outline: none;
+    box-shadow: 0 0 0 0.22rem rgba(71, 120, 230, 0.15);
+}
+
+#item-form textarea {
+    min-height: 8rem;
+    resize: vertical;
+}
+
+#item-form small {
+    margin-top: -0.35rem;
+    color: var(--color-muted);
+    font-size: 0.82rem;
+    line-height: 1.5;
+}
+
+#item-form button {
+    margin-top: 0.85rem;
+    border: 0;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 0.5rem 1rem rgba(55, 101, 207, 0.2);
+}
+
+#item-form button:hover {
+    background: linear-gradient(135deg, #3e6fdc, #2854b8);
+    box-shadow: 0 0.7rem 1.25rem rgba(55, 101, 207, 0.27);
+    transform: translateY(-1px);
+}
+
+#form-message {
+    min-height: 1.25rem;
+    margin: 0;
+    font-size: 0.92rem;
+}
+
+#form-message.error {
+    color: #b42332;
+}
+
+#form-message.success {
+    color: #18764b;
+}
+
+@media (max-width: 480px) {
+    .item-form-page {
+        width: min(100% - 1rem, 42rem);
+        padding: 1rem 0;
+    }
+
+    #item-form {
+        gap: 0.5rem;
+        border-radius: 0.85rem;
+    }
+}

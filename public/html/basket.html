@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/shared.css">
+    <link rel="stylesheet" href="/css/basket.css">
+    <title>Your basket</title>
+</head>
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item" id="add-item-link"><a class="nav-link" href="/itemInsert">Add item</a></li>
+                <li class="nav-item"><a class="nav-link active" href="/basket" aria-current="page">Basket</a></li>
+                <li class="nav-item"><a class="nav-link" href="/profile">Profile</a></li>
+                <li class="nav-item" id="register-link"><a class="nav-link" href="/register">Login/Register</a></li>
+                <li class="nav-item" id="logout-link"><a class="nav-link" href="/" id="logout-button">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="basket-page">
+        <div class="page-heading">
+            <p class="eyebrow">YOUR SHOPPING</p>
+            <h1>Your basket</h1>
+            <p>Review your items before you continue shopping.</p>
+        </div>
+        <div class="basket-layout">
+            <section class="basket-card" aria-label="Basket items">
+                <div id="basket-items" aria-live="polite"></div>
+            </section>
+            <aside class="basket-summary">
+                <h2>Order summary</h2>
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <strong id="basket-subtotal">$0.00</strong>
+                </div>
+                <p class="summary-note">Shipping and taxes are calculated at checkout.</p>
+                <button id="checkout-button" type="button" disabled>Checkout</button>
+                <a class="continue-link" href="/">Continue shopping</a>
+            </aside>
+        </div>
+        <p id="basket-message" class="page-message" role="status" aria-live="polite"></p>
+    </main>
+    <script src="/js/basket.js" defer></script>
+</body>
+</html>

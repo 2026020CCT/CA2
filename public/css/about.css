@@ -1,0 +1,100 @@
+.about-page {
+    width: min(100% - 2rem, 1080px);
+    margin: 0 auto;
+    padding: clamp(3rem, 8vw, 7rem) 0 5rem;
+}
+
+.about-intro {
+    max-width: 760px;
+    padding-bottom: 4rem;
+}
+
+.about-page .eyebrow {
+    margin: 0 0 1rem;
+    color: var(--color-primary-dark);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.about-intro h1 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 5rem;
+    font-weight: 500;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.15;
+}
+
+.story-section > p:not(.eyebrow),
+.contact-panel > p:not(.eyebrow) {
+    max-width: 500px;
+    margin: 1rem 0 0;
+    color: var(--color-muted);
+    line-height: 1.75;
+}
+
+.shop-link {
+    display: inline-flex;
+    gap: 0.6rem;
+    align-items: center;
+    margin-top: 1.5rem;
+    color: var(--color-primary-dark);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.shop-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+.contact-panel {
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background: #172033;
+    color: #fff;
+}
+
+.contact-panel .eyebrow {
+    color: #a9c1ff;
+}
+
+.contact-panel > p:not(.eyebrow) {
+    color: #d3dae7;
+}
+
+.contact-email {
+    display: inline-block;
+    margin-top: 1.25rem;
+    color: #fff;
+    font-weight: 700;
+    text-decoration-color: #a9c1ff;
+    text-underline-offset: 0.25em;
+}
+
+@media (max-width: 680px) {
+    .about-intro h1 {
+        font-size: 3.25rem;
+    }
+
+    .about-page {
+        padding-top: 3rem;
+    }
+
+    .about-intro {
+        padding-bottom: 2.5rem;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .contact-panel {
+        padding: 1.5rem;
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/shared.css">
+    <link rel="stylesheet" href="/css/profile.css">
+    <title>Your profile</title>
+</head>
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item" id="add-item-link"><a class="nav-link" href="/itemInsert">Add item</a></li>
+                <li class="nav-item"><a class="nav-link" href="/basket">Basket</a></li>
+                <li class="nav-item"><a class="nav-link active" href="/profile" aria-current="page">Profile</a></li>
+                <li class="nav-item" id="register-link"><a class="nav-link" href="/register">Login/Register</a></li>
+                <li class="nav-item" id="logout-link"><a class="nav-link" href="/" id="logout-button">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="profile-page">
+        <section class="profile-card" aria-labelledby="profile-name">
+            <div class="profile-avatar" id="profile-avatar" aria-hidden="true">?</div>
+            <div class="profile-details">
+                <p class="eyebrow">ACCOUNT DETAILS</p>
+                <h2 id="profile-name">Welcome</h2>
+                <dl>
+                    <div>
+                        <dt>Name</dt>
+                        <dd id="profile-full-name">Sign in to see your account</dd>
+                    </div>
+                    <div>
+                        <dt>Email</dt>
+                        <dd id="profile-email">—</dd>
+                    </div>
+                </dl>
+            </div>
+            <a class="profile-action" id="profile-login-link" href="/register">Sign in or create an account</a>
+        </section>
+    </main>
+    <script src="/js/profile.js" defer></script>
+</body>
+</html>
